@@ -1,0 +1,51 @@
+.hero {
+  margin-bottom: 7rem;
+  border-left: 2px solid var(--green);
+  padding-left: 1.5rem;
+}
+
+.hero__comment {
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero__handle {
+  font-size: clamp(2rem, 7vw, 3.75rem);
+  font-weight: 700;
+  color: var(--green);
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+}
+
+.hero__role {
+  color: var(--cyan);
+  font-size: 0.95rem;
+  margin-bottom: 1.75rem;
+  min-height: 1.7rem;
+}
+
+.hero__role-cursor {
+  color: var(--green);
+  margin-right: 0.4rem;
+}
+
+.hero__bio {
+  color: var(--fg);
+  opacity: 0.6;
+  max-width: 460px;
+  margin-bottom: 2.25rem;
+  font-size: 0.9rem;
+}
+
+.hero__links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.85rem;
+}
+
+.hero__sep {
+  color: var(--dim);
+  user-select: none;
+}

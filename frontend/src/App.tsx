@@ -1,20 +1,29 @@
-import { useEffect, useState } from "react";
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Hero from './features/hero/Hero'
+import Skills from './features/skills/Skills'
+import Projects from './features/projects/Projects'
+import Blog from './features/blog/Blog'
+import PostPage from './features/blog/PostPage'
+import './App.css'
 
-function App() {
-
-  const [message, setMessage] = useState("");
-
-  useEffect(() => {
-
-    fetch("/api/ping")
-      .then(r => r.text())
-      .then(setMessage);
-
-  }, []);
-
+function Home() {
   return (
-    <h1>{message}</h1>
-  );
+    <main>
+      <Hero />
+      <Skills />
+      <Projects />
+      <Blog />
+    </main>
+  )
 }
 
-export default App;
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog/:slug" element={<main><PostPage /></main>} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
