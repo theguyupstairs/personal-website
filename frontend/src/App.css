@@ -1,1 +1,3 @@
-/* intentionally minimal — layout lives in index.css, styles in feature CSS */
+main > section {
+  margin-bottom: 3rem;
+}

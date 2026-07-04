@@ -8,7 +8,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 1rem;
-  margin-bottom: 7rem;
 }
 
 .post-card {
@@ -101,4 +100,27 @@
 .post-card:hover .post-card__arrow {
   opacity: 1;
   transform: translateX(3px);
+}
+
+.blog__see-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1.75rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--dim);
+  font-size: 0.8rem;
+  color: var(--fg);
+  text-decoration: none;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.blog__see-all:hover {
+  border-color: var(--green);
+  color: var(--green);
+  text-decoration: none;
+}
+
+.post-card__tag--active {
+  color: var(--green);
 }
