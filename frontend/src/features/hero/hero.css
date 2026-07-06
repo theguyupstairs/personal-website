@@ -1,6 +1,6 @@
 .hero {
   margin-bottom: 7rem;
-  border-left: 2px solid var(--green);
+  border-left: 1px solid var(--dim);
   padding-left: 1.5rem;
 }
 

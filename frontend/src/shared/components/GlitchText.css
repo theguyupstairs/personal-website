@@ -17,25 +17,25 @@
 .glitch::before {
   color: var(--red);
   clip-path: polygon(0 0, 100% 0, 100% 38%, 0 38%);
-  animation: glitch-top 5s infinite linear;
+  animation: glitch-top 9s infinite linear;
 }
 
 .glitch::after {
   color: var(--cyan);
   clip-path: polygon(0 62%, 100% 62%, 100% 100%, 0 100%);
-  animation: glitch-bottom 5s infinite linear;
+  animation: glitch-bottom 9s infinite linear;
 }
 
 @keyframes glitch-top {
-  0%, 88%, 100% { transform: translate(0);       opacity: 0; }
-  90%            { transform: translate(-3px, 1px); opacity: 1; }
-  92%            { transform: translate(3px, -1px); opacity: 1; }
-  94%            { transform: translate(0);       opacity: 0; }
+  0%, 95%, 100% { transform: translate(0);         opacity: 0; }
+  96%            { transform: translate(-2px, 1px); opacity: 0.8; }
+  97%            { transform: translate(2px, -1px); opacity: 0.8; }
+  98%            { transform: translate(0);         opacity: 0; }
 }
 
 @keyframes glitch-bottom {
-  0%, 88%, 100% { transform: translate(0);       opacity: 0; }
-  91%            { transform: translate(3px, 1px); opacity: 1; }
-  93%            { transform: translate(-3px, -1px); opacity: 1; }
-  95%            { transform: translate(0);       opacity: 0; }
+  0%, 95%, 100% { transform: translate(0);         opacity: 0; }
+  96%            { transform: translate(2px, 1px);  opacity: 0.8; }
+  97%            { transform: translate(-2px, -1px); opacity: 0.8; }
+  98%            { transform: translate(0);         opacity: 0; }
 }

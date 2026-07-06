@@ -2,7 +2,6 @@ package profilerepo
 
 import (
 	"database/sql"
-
 	"github.com/theguyupstairs/personal-website/internal/domain/profile"
 )
 

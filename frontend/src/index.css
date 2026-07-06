@@ -2,7 +2,7 @@
   --bg:    #0a0a0a;
   --fg:    #c9c9c9;
   --green: #39ff14;
-  --cyan:  #00e5ff;
+  --cyan:  #7ecfcf;
   --red:   #ff003c;
   --dim:   #444;
   --font:  'JetBrains Mono', monospace;
@@ -23,7 +23,7 @@ html, body {
   min-height: 100vh;
 }
 
-/* CRT scanlines */
+/* CRT scanlines — re-enable by uncommenting
 body::after {
   content: '';
   position: fixed;
@@ -38,6 +38,7 @@ body::after {
   pointer-events: none;
   z-index: 9999;
 }
+*/
 
 #root {
   max-width: 820px;

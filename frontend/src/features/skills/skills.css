@@ -51,7 +51,3 @@
   opacity: 0.75;
 }
 
-.skill-group__item::before {
-  content: '— ';
-  color: var(--dim);
-}
