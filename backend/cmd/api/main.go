@@ -13,6 +13,7 @@ import (
 	contactapi    "github.com/theguyupstairs/personal-website/internal/presentation/api/contact"
 	profileapi    "github.com/theguyupstairs/personal-website/internal/presentation/api/profile"
 	projectapi    "github.com/theguyupstairs/personal-website/internal/presentation/api/project"
+	"github.com/theguyupstairs/personal-website/internal/presentation/web"
 )
 
 func main() {
@@ -49,6 +50,7 @@ func main() {
 	mux.HandleFunc("GET /api/projects",   projectHandler.List)
 	mux.HandleFunc("POST /api/contact",   contactHandler.Post)
 	mux.HandleFunc("POST /api/analytics", analyticsHandler.Track)
+	mux.Handle("/", web.NewHandler("./dist"))
 
 	log.Println("Starting server on :8080")
 	log.Fatal(http.ListenAndServe(":8080", mux))
