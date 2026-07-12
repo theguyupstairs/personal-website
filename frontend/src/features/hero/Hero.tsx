@@ -18,11 +18,6 @@ export default function Hero() {
         {role}
       </p>
 
-      <p className="hero__bio">
-        {/* TODO: one or two lines about you */}
-        building things. breaking things. occasionally both at once.
-      </p>
-
       <nav className="hero__links">
         <a href="https://github.com/theguyupstairs" target="_blank" rel="noreferrer">
           github
